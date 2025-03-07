@@ -1,0 +1,178 @@
+/* h2{
+    color: yellow !important;
+} */
+
+*{
+   /* margin: 0px;
+   text-decoration: none;
+   /* list-style-type: none; */
+   /* background-color: transparent; */ 
+}
+
+
+
+header{
+    background-color: green;
+}
+h2 {}
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
+
+
+/* .class.class */
+.card.item {
+    background: blue;
+}
+
+/* .class .class */
+
+/* .card .item {
+    background-color: blueviolet;
+}
+
+
+
+.item + span{
+    background-color: aqua;
+}
+
+.item ~ span{
+    background-color: red;
+} */
+
+
+
+span{
+    background-color: yellow;
+}
+
+
+
+#item{
+    background-color: pink;
+}
+
+.item{
+    background-color: green;
+}
+
+
+input[type$="r"]{
+    padding: 10px;
+}
+
+
+
+
+p::selection{
+    background-color: pink;
+    color: white;
+}
+
+
+
+p::first-line{
+    background-color: pink;
+    color: white;
+}
+
+p::first-letter{
+    color: red;
+}
+input::placeholder{
+    color: red;
+    font-size: 20px;
+}
+
+/* li::marker{
+    color: green;
+    font-size: 30px;
+}
+
+li{
+    font-size: 30px;
+} */
+
+.text::after{
+    content: "/";
+}
+
+.text::before{
+    content: "/";
+}
+
+
+button{
+    background-color: cadetblue;
+    font-size: 15px;
+    border: 1px solid blue;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    transition: all .3s ease;
+}
+button:hover{
+    background-color: white;
+    color: blue;
+    border-color: cadetblue;
+}
+
+
+
+.last > li:not(:nth-child(3)){
+    color: red;
+
+}
+/*
+.last > li:last-child{
+    color: green;
+}
+
+.last li:nth-child(3){
+  color: blue;
+} */
+
+
+
+
+/* .last li:nth-child(odd){
+  color: red;
+}
+
+.last li:nth-child(even){
+    color: blue;
+  } */
+
+  /* .last li:nth-child(2n){
+    color: red;
+  }
+   */
+  /* .last li:nth-child(3n+2){
+      color: blue;
+    } */
+
+
+
+/* 
+  tag: 1
+  class : 10
+  id: 100
+
+*/
+
+
+/* 
+.last li:nth-child(1n+2){
+    color: red;
+  } */
+
+
+  input:focus{
+    padding: 20px;
+  }
