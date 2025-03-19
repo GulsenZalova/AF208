@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+            .boxes{
+            width: 600px;
+            height: 600px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* display: none; */
+            /* visibility: hidden;
+            opacity: 0; */
+            /* display: inline-block; */
+            /* margin: 10px; */
+            color: white;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: row;
+            font-size: 20px;
+
+        }
+        .box-1{
+            flex-grow: 1;
+        }
+        li{
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+<body>
+    <!-- none, block, inline,inline-block,flex, grid -->
+    <div class="boxes">
+        <div class="box box-1">1</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- <div class="boxes">
+        <span class="box">1</span>
+        <span class="box">2</span>
+        <span class="box">3</span>
+    </div>
+ -->
+
+    <ul>
+        <li><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+
+/* 
+ xs - mobil - < 576px
+ s - tablet - 576px dan 726px qədər
+ m - laptop - 726px dan 992px qədər 
+ l - desktop - 992px dan 1024 qədər
+ xl -  1024px dən yuxarı
+*/
+
+
+@media screen and (max-width:576px) {
+    body{
+        background-color: yellow;
+    }
+     
+    h1{
+        color: red;
+    }
+   
+}
+
+
+
+
+@media (min-width:576px) and (max-width:726px) {
+    body{
+        background-color: orange;
+    }
+     
+    h1{
+        color: green;
+    }
+   
+}
+
+
+
+
+@media (min-width:726px) and (max-width:992px) {
+    body{
+        background-color: blue;
+    }
+     
+    h1{
+        color: violet;
+    }
+   
+}
+
+
+
+
+@media screen and (min-width:992px) {
+    body{
+        background-color: red;
+    }
+     
+    h1{
+        color: yellow;
+    }
+   
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .wrapper{
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: cadetblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .overlay{
+            position: absolute;
+            bottom: 0;
+            left:0 ;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            opacity: 0;
+            transition: all 0.7s ease;
+            transform: translateY(20%);
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            transition: all 0.3s ease;
+
+
+
+
+            /* transform: translateX(200px); */
+            /* transform: translateX(-200px);
+            transform: translateY(-200px);
+            transform: translateY(200px); */
+
+
+            /* transform: scaleX(1.1); */
+
+          border-top-left-radius: 10px ;
+       
+            background-color: blue;
+        }
+        .box:hover{
+            /* transform: translate(200px,200px); */
+            /* transform: translateY(200px); */
+
+            /* transform: scaleX(0.7);
+            transform: scaleY(1.3); */
+
+            /* transform: scale(1.2); */
+
+            transform: rotate(-720deg) scale(1.5);
+        }
+
+        img{
+            transition: all .3s ease;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* .wrapper:hover img{
+            transform: scale(1.2);
+            width: 100%;
+        } */
+
+        .wrapper:hover .overlay{
+            opacity: 1;
+            transform: translateY(0%);
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- translate ,scale, rotate -->
+
+    <div class="wrapper">
+
+        <!-- <div class="box"></div> -->
+        <img src="https://titanwatches.com.bd/cdn/shop/files/2648WM03_67318d07-684b-4813-92ff-999584675628.jpg?v=1711699873" alt="">
+
+        <div class="overlay">
+                Hello World
+        </div>
+    </div>
+</body>
+</html>

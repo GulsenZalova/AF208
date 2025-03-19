@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// extend
+
+%flex {
+    display: flex;
+    align-items: center;
+    
+}
+
+// mixin(parametrli ve parametrsiz)
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin Flex($display, $align, $justify, $gap: "0px") {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+header {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+    @include Flex(flex, center, center);
+    background-color: aquamarine;
+
+    .container {
+        width: 80%;
+        margin: 0px auto;
+
+        .wrapper {
+            @include Flex(flex, center, space-between);
+
+            ul {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include Flex(flex, center, center, 15px);
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

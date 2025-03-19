@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+    <style>
+        @import 'animate.css';
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: cadetblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            animation-name: ChangeColor;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: backwards;
+            animation-direction: alternate-reverse; */
+        }
+
+        img {
+            transition: all .3s ease;
+            width: 100%;
+            height: 100%;
+            /* animation-name: ChangeScale;
+            animation-duration: .3s;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+            animation-fill-mode: backwards; */
+        }
+
+        img:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes ChangeScale {
+            from {
+                transform: scale(0.9);
+            }
+
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+
+        .text-shadow-drop-tr {
+            -webkit-animation: text-shadow-drop-tr 0.6s both;
+            animation: text-shadow-drop-tr 0.6s both;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+
+
+        @-webkit-keyframes text-shadow-drop-tr {
+            0% {
+                text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                text-shadow: 6px -6px 18px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        @keyframes text-shadow-drop-tr {
+            0% {
+                text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                text-shadow: 6px -6px 18px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .animate__animated {
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ChangeColor {
+            /* from{
+                background-color: blue;
+            }
+            to {
+                background-color: darkblue;
+            } */
+
+
+            0% {
+                top: 0;
+                left: 0;
+                background-color: cornflowerblue;
+            }
+
+            25% {
+                background-color: cyan;
+                top: 0;
+                left: calc(100% - 100px);
+            }
+
+            50% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+                background-color: darkslateblue;
+            }
+
+            75% {
+                top: calc(100% - 100px);
+                left: 0;
+                background-color: blueviolet;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 class="text-shadow-drop-tr">An animated element</h1>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="wrapper">
+<!-- 
+        <div class="box">
+
+        </div> -->
+         <img src="./assest/img/watch.webp"
+            alt="">
+    </div>
+</body>
+
+</html>
