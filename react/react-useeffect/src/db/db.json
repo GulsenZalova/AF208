@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": "2",
+      "description": "Sweet and savory sauces relishes spreads and seasonings",
+      "name": "Condiments",
+      "price": 10
+    },
+    {
+      "id": "1",
+      "description": "Soft drinks coffees teas beers and ales",
+      "name": "Beverages",
+      "price": 15
+    },
+    {
+      "id": "3",
+      "description": "Desserts candies and sweet breads",
+      "name": "Confections",
+      "price": 145
+    },
+    {
+      "id": "4",
+      "description": "Cheeses",
+      "name": "Dairy Products",
+      "price": 105
+    },
+    {
+      "id": "5",
+      "description": "Breads crackers pasta and cereal",
+      "name": "Grains/Cereals",
+      "price": 5
+    },
+    {
+      "id": "6",
+      "description": "Prepared meats",
+      "name": "Meat/Poultry",
+      "price": 1
+    },
+    {
+      "id": "7",
+      "description": "Dried fruit and bean curd",
+      "name": "Produce",
+      "price": 1000
+    },
+    {
+      "name": "salam",
+      "description": "salam 1234",
+      "id": "9",
+      "price": 700
+    },
+    {
+      "id": "dacb",
+      "name": "fxdgvdf",
+      "description": "dfvrg",
+      "price": 200
+    },
+    {
+      "id": "77d4",
+      "name": "dfg",
+      "description": "dfvdrfgv",
+      "price": 350
+    },
+    {
+      "id": "9bba",
+      "name": "rfgrg",
+      "description": "dfvrdg",
+      "price": 850
+    }
+  ]
+}
